@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS TASK-2</title>
+<style>
+.vertical-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #76c9df;
+  font-size: 18px; /* Decrease the font size for the entire vertical navigation bar */
+}
+
+/* Default style for links in the vertical navigation bar */
+.list-anchor {
+  display: block;
+  color: blue;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Style for the Home link */
+a.ex-home {
+  background-color: orange;
+  color: white;
+}
+
+/* Style for specific links in blue in the vertical navigation bar */
+a.ex-blue {
+  color: blue;
+}
+
+.box {
+  border: 2px black solid;
+  width: 200px;
+  height: 180px;
+  padding: 10px;
+}
+
+a.ex2:hover {
+  background-color: gray;
+  color: #ffffff;
+}
+
+.box2 {
+  border: 2px black solid;
+  width: 400px;
+  height: 50px;
+  padding: 10px;  
+}
+
+.h-u-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgrey;
+}
+
+.h-list {
+  float: left;
+}
+
+/* Style for specific links in blue in the horizontal navigation bar */
+.h-blue {
+  color: blue;
+}
+
+.h-anchor {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-right: 1px blue solid;
+}
+
+/* Style for the heading in the vertical navigation bar */
+.vertical-list h1 {
+  font-size: 18px; /* Decrease the font size for the heading */
+}
+</style>
+</head>
+<body>
+    <div style="display: flex;">
+        <div>
+            <h1>Vertical Navigation Bar</h1>
+            <div class="box">
+                <ul class="vertical-list">
+                    <!-- Add the "ex-home" class to the Home link -->
+                    <li><a href="#Home" class="list-anchor ex ex-home">Home</a></li>
+                    <!-- Add the "ex-blue" class to Java, HTML, and CSS links -->
+                    <li><a href="#Java" class="list-anchor ex ex-blue">Java</a></li>
+                    <li><a href="#CSS" class="list-anchor ex ex-blue">CSS</a></li>
+                    <li><a href="#HTML" class="list-anchor ex ex-blue">HTML</a></li>
+                    <li><a href="#bootstrap" class="list-anchor ex">Bootstrap</a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="margin-left: 20px; align-self: center;">
+            <h2>Horizontal Navigation Bar</h2>
+            <div class="box2">
+                <ul class="h-u-list">
+                    <li class="h-list"><a class="active h-anchor ex2" href="#home">Home</a></li>
+                    <!-- Add the "h-blue" class to Java, HTML, and CSS links -->
+                    <li class="h-list"><a class="h-anchor ex2 h-blue" href="#news">Java</a></li>
+                    <li class="h-list"><a class="h-anchor ex2 h-blue" href="#contact">HTML</a></li>
+                    <li class="h-list"><a class="h-anchor ex2 h-blue" href="#about">CSS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

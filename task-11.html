@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-6</title>
+    <style>
+        .container {
+            margin: 5%;
+            margin-left: 45%;
+            height: max-content;
+            width: max-content;
+        }
+        #Uname,#pass{
+            padding: 7px;
+            border: 1px solid rgb(180, 171, 171);
+            font-family:Arial, Helvetica, sans-serif;
+            border-right:none;
+        }
+        #login{
+            padding: 7px;
+            width: 377px;
+            background-color: rgb(30, 236, 30);
+            border: none;
+        }
+        .img{
+            text-align: center;
+        }
+        #cancel{
+            color: white;
+            background-color: red;
+            padding: 4px;
+            border: none;
+            border-radius: 3px;
+            width: 70px;
+            height: 30px;
+        }
+        .last{
+            background-color: beige;
+            padding: 4px;
+            padding-top: 7px;
+            height: 35px;
+            border-top: 1px solid rgb(218, 208, 208);
+        }
+        .last a{
+            float: right;
+            color: black;
+            padding-top: 10px;
+        }
+        #ulabel,#plabel{
+            font-weight: bolder;
+        }
+       
+          </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmZtFMYuB2jtlPcxigqwqzkropt7nGBronwg&usqp=CAU" >
+        </div>
+        <div>
+            <form action="/action">
+                <label for="Uname" id="ulabel">Username</label><br>
+                <input type="text" id="Uname" name="name" placeholder="Enter Username" size="50"> <br><br>
+                <label for="pass" id="plabel">Password</label><br>
+                <input type="password" id="pass" name="password" placeholder="Enter Password" size="50"> <br><br>
+                <button id="login">Login</button> <br><br>
+                <input type="checkbox" id="think" checked>Remember me<br><br>
+                
+
+                <div class="last">
+                    <button id="cancel">Cancel</button>
+                    <a href="/forget password">Forget password?</a>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
